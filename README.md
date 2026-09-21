@@ -407,6 +407,7 @@ The verification environment is designed to ensure:
 ## Author
 
 **Chandirapriyan K**
+
 RTL Design | Design Verification
 
 **Skills:** Verilog, SystemVerilog, UVM, APB, UART, RAL, SVA, Functional Coverage, Constrained-Random Verification, TLM, QuestaSim, Synopsys VCS, Linux
