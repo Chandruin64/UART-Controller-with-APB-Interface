@@ -70,13 +70,6 @@ The testbench is developed using a layered UVM architecture with separate APB an
                  |                                                |
                  |              UART Controller                   |
                  |                                                |
-                 |          +-----------------------+             |
-                 |          | APB Register Interface|             |
-                 |          +-----------------------+             |
-                 |                                                |
-                 |          +-----------------------+             |
-                 |          | TX / RX / FIFO Logic  |             |
-                 |          +-----------------------+             |
                  +------------------------------------------------+
 ```
 
