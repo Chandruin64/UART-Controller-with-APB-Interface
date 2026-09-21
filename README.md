@@ -25,53 +25,9 @@ The APB interface is used for processor-style configuration and register access,
 
 The testbench is developed using a layered UVM architecture with separate APB and UART agents.
 
-```text
-                              +----------------------+
-                              |       UVM TEST       |
-                              +----------+-----------+
-                                         |
-                                         v
-                    +-------------------------------------------+
-                    |                ENVIRONMENT                |
-                    |                                           |
-                    |  +------------------+  +----------------+ |
-                    |  | Virtual          |  | Register Model | |
-                    |  | Sequencer        |  |     (RAL)      | |
-                    |  +------------------+  +----------------+ |
-                    |                                           |
-                    |              +------------------+         |
-                    |              |    Scoreboard    |         |
-                    |              |                  |         |
-                    |              |     APB FIFO     |         |
-                    |              |     UART FIFO    |         |
-                    |              |        |         |         |
-                    |              |     Compare      |         |
-                    |              +------------------+         |
-                    +------------------+------------------------+
-                                       |
-                     +-----------------+-----------------+
-                     |                                   |
-                     v                                   v
-            +-------------------+               +-------------------+
-            |     APB AGENT     |               |     UART AGENT    |
-            |                   |               |                   |
-            |     Sequencer     |               |     Sequencer     |
-            |        |          |               |        |          |
-            |      Driver       |               |      Driver       |
-            |        |          |               |        |          |
-            |      Monitor      |               |      Monitor      |
-            +---------+---------+               +---------+---------+
-                      |                                   |
-                      +-----------------+-----------------+
-                                        |
-                                        v
-                 +------------------------------------------------+
-                 |                      DUT                       |
-                 |                                                |
-                 |              UART Controller                   |
-                 |                                                |
-                 +------------------------------------------------+
-```
+<p align="center">
+  <img src="UART Architecture.png" width="1000">
+</p>
 
 ## Testbench Components
 
